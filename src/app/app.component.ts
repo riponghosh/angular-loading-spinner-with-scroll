@@ -9,16 +9,25 @@ export class AppComponent implements OnInit {
 	title = 'angular';
 
 	public numbers=[];
+	public loading = false;
 
 	ngOnInit() {
 		this.generateArray();
 	}
 
 
-	generateArray(){
+	async generateArray(){
+		this.loading=true;
 		let len=this.numbers.length;
 		for(let i=len;i<=len+50;i++){
-			this.numbers.push(i);
+			await this.sleep(50).then(() => {
+				this.numbers.push(i);
+			})
 		}
+		this.loading=false;
+	}
+
+	sleep = (milliseconds) => {
+	  	return new Promise(resolve => setTimeout(resolve, milliseconds))
 	}
 }
