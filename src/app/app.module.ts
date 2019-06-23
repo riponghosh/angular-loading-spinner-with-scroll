@@ -8,12 +8,14 @@ import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxLoadingComponent } from './ngx-loading/ngx-loading.component';
 import { NgxSpinnerComponent } from './ngx-spinner/ngx-spinner.component';
+import { CustomComponent } from './custom/custom.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgxLoadingComponent,
-    NgxSpinnerComponent
+    NgxSpinnerComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule,
