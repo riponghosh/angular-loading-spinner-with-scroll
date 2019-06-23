@@ -1,3 +1,17 @@
-<p>
-  ngx-spinner works!
-</p>
+<div style="margin: 0 auto;width: 400px;background: #f9f9f9;padding: 50px;border: 1px #ccc solid;border-radius: 4px;" infiniteScroll
+[infiniteScrollDistance]="1"
+[infiniteScrollThrottle]="50"
+(scrolled)="generateArray()">
+	<h1>
+		Welcome to {{ title }}!
+	</h1>
+
+	<ul>
+		<li *ngFor="let number of numbers">{{number}}</li>
+	</ul>
+	<br><br>
+	<div style="position: relative;">
+		
+	</div>
+
+</div>
