@@ -9,13 +9,15 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxLoadingComponent } from './ngx-loading/ngx-loading.component';
 import { NgxSpinnerComponent } from './ngx-spinner/ngx-spinner.component';
 import { CustomComponent } from './custom/custom.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgxLoadingComponent,
     NgxSpinnerComponent,
-    CustomComponent
+    CustomComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
