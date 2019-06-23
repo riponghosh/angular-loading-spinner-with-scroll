@@ -17,10 +17,11 @@ export class AppComponent implements OnInit {
 
 
 	async generateArray(){
+		if(this.loading) return;
 		this.loading=true;
 		let len=this.numbers.length;
 		for(let i=len;i<=len+50;i++){
-			await this.sleep(50).then(() => {
+			await this.sleep(500).then(() => {
 				this.numbers.push(i);
 			})
 		}

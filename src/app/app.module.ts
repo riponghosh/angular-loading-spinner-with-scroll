@@ -17,11 +17,11 @@ import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
     NgxLoadingModule.forRoot({
         animationType: ngxLoadingAnimationTypes.circle,
         backdropBackgroundColour: 'rgba(0,0,0,0.1)', 
-        backdropBorderRadius: '4px',
+        backdropBorderRadius: '3px',
         primaryColour: '#ffffff', 
-        secondaryColour: '#ccc', 
+        secondaryColour: '#ccc',
         tertiaryColour: '#ffffff',
-        fullScreenBackdrop:true
+        // fullScreenBackdrop:true
     })
   ],
   providers: [],

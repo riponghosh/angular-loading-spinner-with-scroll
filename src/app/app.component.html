@@ -1,16 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="margin: 0 auto;width: 400px;" infiniteScroll
-      [infiniteScrollDistance]="1"
-      [infiniteScrollThrottle]="50"
-      (scrolled)="generateArray()">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <ul>
-    <li *ngFor="let number of numbers">{{number}}</li>
-  </ul>
-  <br><br>
-  
-  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+<div style="margin: 0 auto;width: 400px;background: #f9f9f9;padding: 50px;border: 1px #ccc solid;border-radius: 4px;" infiniteScroll
+[infiniteScrollDistance]="1"
+[infiniteScrollThrottle]="50"
+(scrolled)="generateArray()">
+<h1>
+	Welcome to {{ title }}!
+</h1>
+
+<ul>
+	<li *ngFor="let number of numbers">{{number}}</li>
+</ul>
+<br><br>
+<div style="position: relative;">
+	<ngx-loading [show]="true" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+</div>
+
 </div>
 <router-outlet></router-outlet>
