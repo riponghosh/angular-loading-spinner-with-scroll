@@ -5,13 +5,23 @@
 	<h1>
 		Welcome to {{ title }}!
 	</h1>
-
+	<button (click)="generateArray()">Click to View List</button>
 	<ul>
 		<li *ngFor="let number of numbers">{{number}}</li>
 	</ul>
 	<br><br>
-	<div style="position: relative;">
-		
+	<div style="width: 400px;position: relative;">
+		<ngx-spinner
+			bdOpacity = 0.9
+			bdColor = "#333"
+			size = "medium"
+			color = "#ccc"
+			type = "ball-clip-rotate"
+			[fullScreen] = "false"
+			>
+			<!-- <p style="color: white" > Loading... </p> -->
+		</ngx-spinner>
+
 	</div>
 
 </div>

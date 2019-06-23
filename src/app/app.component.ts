@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 	public loading = false;
 
 	ngOnInit() {
-		this.generateArray();
+		// this.generateArray();
 	}
 
 
