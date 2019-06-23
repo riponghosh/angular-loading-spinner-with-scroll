@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
 import { NgxLoadingComponent } from './ngx-loading/ngx-loading.component';
+import { NgxSpinnerComponent } from './ngx-spinner/ngx-spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgxLoadingComponent
+    NgxLoadingComponent,
+    NgxSpinnerComponent
   ],
   imports: [
     BrowserModule,
